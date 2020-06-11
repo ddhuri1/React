@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to React Basics</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    
+    <div id="app" />
+    <script type="text/babel">
+        class App extends React.Component{
+            state = {
+                name : "Devina",
+                age : 25
+            }
+
+            handleClick = (e) => {
+                alert("Button Clicked");
+                this.setState ({
+                    name : "Candice"
+                });
+
+
+            }
+
+            handleHover = (e) => {
+                alert("Button Hovered Upon");
+            }
+
+            handleSubmit = (e) => {
+                e.preventDefault();
+                alert("Name Submittted is: " + this.state.name);
+            }
+
+            handleChange = (e) => {
+                this.setState ({
+                    name : e.target.value
+                });
+            }
+            render(){
+                return (
+                    <div className="app-content">
+                        <h2> THIS IS AN INTRODUCTION TO REACT</h2>
+                        <h4> My name is {this.state.name} and age is {this.state.age} </h4>
+                        <button onClick={this.handleClick}> CLICK ME</button>
+                        <button onMouseOver={this.handleHover}> HOVER OVER ME</button>
+                        <form onSubmit={this.handleSubmit}>
+                            <input type="text" onChange={this.handleChange} />
+                            <button> SUBMIT </button>
+                        </form>
+                    </div>
+                )
+            }
+        }
+        ReactDOM.render(<App />, document.getElementById('app'));
+    </script>
+</body>
+</html>
