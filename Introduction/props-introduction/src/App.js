@@ -39,7 +39,7 @@ class App extends Component{
     return (
       <div className="App">
         <h2 style={{textAlign: "center"}}>Introduction to Props in React</h2>
-        <p style={{textAlign: "center"}}>This is an introduction to using <strong>Props</strong> in React and it also showd the difference between props and states.<br />This code goes through creating <strong>UI components</strong> and adding <strong>Condition</strong> to trigger the props withen them. <br />It also includes some form creating to <strong>Add</strong> and <strong>Delete</strong> the elements in props. </p>
+        <p style={{textAlign: "center"}}>This is an introduction to using <strong>Props</strong> in React and it also showd the difference between props and states.<br />This code goes through creating <strong>Functional components</strong> and adding <strong>Condition</strong> to trigger the props withen them. <br />It also includes some <strong>Add</strong> and <strong>Delete</strong> functionalities. </p>
         <br /><br />
         <Add addPeople={this.addPeople}/>
         <Delete deleteThis={this.deleteThis}/><br />
