@@ -19,9 +19,9 @@ class DeletePeople extends Component{
     return (
       <div className="Delete">
         <form onSubmit ={this.handleSubmit}>
-          <label style={{marginLeft: "30px"}} htmlFor = "name">Name: </label>
+          <label htmlFor = "name">Name: </label>
           <input type= "text" id="name" onChange={this.handleChange} />
-          <button style={{marginLeft: "30px"}} onClick= {() => {this.props.deleteThis(this.state.name)}}> Delete this person</button>
+          <button onClick= {() => {this.props.deleteThis(this.state.name)}}> Delete this person</button>
         </form>
         <br />
       </div>

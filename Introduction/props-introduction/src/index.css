@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App h2, .App p{
+  text-align: center
+}
+
+.Delete label, .Delete button{
+  margin-left: 30px
+}
+
+.Add label, .Add button{
+  margin-left: 30px
+}
+
+.Person div{
+  margin-left: 30px;
+  background: #fff 
+}

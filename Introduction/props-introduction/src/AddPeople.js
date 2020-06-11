@@ -24,13 +24,13 @@ class AddPeople extends Component{
     return (
       <div className="Add">
         <form onSubmit = {this.handleSubmit}>
-            <label style={{marginLeft: "30px"}} htmlFor = "name">Name: </label>
+            <label htmlFor = "name">Name: </label>
             <input type= "text" id="name" onChange={this.handleChange} />
             <label htmlFor = "age"> &nbsp; Age: </label>
             <input type= "number" id="age" onChange={this.handleChange} />
             <label htmlFor = "sex"> &nbsp; Sex: </label>
             <input type= "text" id="sex" onChange={this.handleChange} />
-            <button style={{marginLeft: "30px"}}> Add this Person </button>
+            <button > Add this Person </button>
         </form>
         <br />
       </div>

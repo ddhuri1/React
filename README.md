@@ -1,10 +1,10 @@
-#"React Introduction"
+# "React Introduction"
 
 This is an introduction to React that takes you from what React is, to understanding its components and finally creating an application 
 
 1. index.html
 
-This file is the basic react app page that shows you how to make a basic html page with react features.
+   This file is the basic react app page that shows you how to make a basic html page with react features.
 
    - React CDN 
    https://reactjs.org/docs/cdn-links.html: 
@@ -36,3 +36,6 @@ This file is the basic react app page that shows you how to make a basic html pa
    The concept of cycling through lists of data and outputting that data in the component template. To do this, we'll use the map function.
    - Add/Delete:
    How we can add data to existing state and also delete data from the state.
+   - CSS:
+   Use and import CSS files into your components. For more info on CSS modules, see the link below.
+   More info on CSS modules - https://blog.pusher.com/css-modules-react/

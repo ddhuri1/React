@@ -4,7 +4,7 @@ const Person = (props) => {
     const {people} = props;
     const peopleList = people.map(prop => {
         return(
-          <div className="Person"  style={{marginLeft: "30px"}}>
+          <div className="Person">
             <div><strong>Name:</strong> {prop.name}, Age: {prop.age}, Sex: {prop.sex}</div><br />
           </div>
         )
