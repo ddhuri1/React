@@ -1,0 +1,32 @@
+.Todos{
+     text-align: left;
+     margin-left: 30px;
+}
+
+.deletion  {
+    margin-left: 30px;
+    font-size: small;
+}
+
+.Add {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.Add button{
+    background-color: #7db0c0;
+}
+
+.Add label{
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
+}
+
+.Add input{
+    display: inline-block;
+}
