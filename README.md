@@ -49,9 +49,9 @@ This is an introduction to React that takes you from what React is, to understan
    - [x] Delete todos
    - [x] Mark them
 
-The running applicaton can be viewed on devinadhuri.com/ <br />
-For materializecss: Add this link to index.html <br />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   The running applicaton can be viewed on devinadhuri.com/ <br />
+   For materializecss: Add this link to index.html <br />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 4. **routes-introduction:**
  
@@ -71,19 +71,33 @@ For materializecss: Add this link to index.html <br />
    Alternatives to Axios are: redux-saga, graphQL, jQuery, Modernizr, fancyBox, Lodash, Moment.js. <br />
    Use the get/fetch method in componentDidMount(). Use the <Switch> to only load up 1 component at a time.
 
-5. **Redux:**
+5. **redux-introduction:**
 
-Redux is really a fairly simple design pattern. Redux is a predictable state container for JavaScript apps. ***"npm install redux"***. More information T https://redux.js.org/introduction/getting-started. <br />
+   This project has the same code structure as routes-introduction, just that instead on Axios we will use Redux store.
+   Redux is really a fairly simple design pattern. Redux is a predictable state container for JavaScript apps. Install both redux and react redux: ***"npm install redux react-redux"***. <br /> 
+   More information: https://redux.js.org/introduction/getting-started. <br />
 
-![Redux process]https://www.esri.com/arcgis-blog/wp-content/uploads/2017/09/react-redux-overview.png
+   ![Redux process](https://www.esri.com/arcgis-blog/wp-content/uploads/2017/09/react-redux-overview.png)
+   The component doesn't make changes to the store, it calls the dispatcher on the action that inturn calls the reducer and the Reducer makes changes to the store. <br />
+    
+   ```
+   import {Provider} from 'react-redux';  //in INDEX.js: 
+   import { createStore } from 'redux';   //createStore is a function from Redux
+   RectDOM.render(<Provider> store={store} <App /></Provider>) //Provider interacts with the App.js
+   function reducer(state = 0, action) {  // initially reducer needs some state and since it cannot find one it usesthe initial state (= 0)
+      if(action.type == <>)
+      return { ...state, <tochange> }     //try not chnaging the actual state but rather creating a new one and copying it over. Also need to take the previous states that wone be chnaged else this will overwrite original state
+   } 
+   let store = createStore(reducer)       //This is a reducer, a pure function with (state, action) => state signature. It describes how an action transforms the state into the next state.
+   store.subscribe(() => {..})            //Everytime state updated subscribe is fired.
+   const action = {type: '...', <payload>}//Action is a JS object and it has a type property that describes the action and has a Payload.
+   store.dispatch(<action to dispatch>)   //dispatch the action 
+   ```
+   In this the reducer runs 2 times, one when crateStore is called where it is initialized with a state and second when the dispatch is called where it sets an action to the state.
 
-```
-import { createStore } from 'redux' //createStore is a function from Redux
-function reducer(state = 0, action) { .... } // initially reducer needs some state and since it cannot find one it usesthe initial state (= 0)
-let store = createStore(reducer) //This is a reducer, a pure function with (state, action) => state signature. It describes how an action transforms the state into the next state.
-const action = {type: '...', <payload>} //Action is a JS object and it has a type property that describes the action and has a Payload.
-store.dispatch(<action to dispatch>) //dispatch the action 
-```
+   to redirect from a page, call ```this.post.history("/");```
+    
+   
 
 
 
