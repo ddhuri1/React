@@ -118,7 +118,8 @@ This is an introduction to React that takes you from what React is, to understan
    - ***Auth part 1:***<br />
       - [x] Sign In Component
       - [x] Sign Up Component
-
+      - [x] NavLinks 
+      
    - ***:***<br />
       - [x]
       - [x]
