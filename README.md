@@ -104,10 +104,37 @@ This is an introduction to React that takes you from what React is, to understan
    - ***Setting Up:***<br />
       - [x] npx create-react-app <name>
       - [x] npm install react-router-dom
+      - [x] npm install redux react-redux
 	   - [x] cd <name>          
 	   - [x] npm start          
       
+   - ***Navbar Routing:***<br />
+      - [x] Navbar Component
+      - [x] Dashboard Component
+      - [x] Routes to home page and projects
+      - [x] Project summary and detail
+
+   - ***Auth part 1:***<br />
+      - [x]
+      - [x]
+      - [x]
+
+   - ***:***<br />
+      - [x]
+      - [x]
+      - [x]
+
+   - ***:***<br />
+      - [x]
+      - [x]
+      - [x]
       
+   - ***:***<br />
+
+   - ***:***<br />
+
+   - ***:***<br />
+
 
 
 
