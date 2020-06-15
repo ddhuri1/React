@@ -102,8 +102,12 @@ This is an introduction to React that takes you from what React is, to understan
    This is a project where you can add your projects and descriptions. It is linked with firebase: ![React-Redux-Firebase](https://github.com/ddhuri1/React/blob/master/React-Redux-Firebase.png) and supports signin functionality.
 
    - ***Setting Up:***<br />
+      - [x] npx create-react-app <name>
+      - [x] npm install react-router-dom
+	   - [x] cd <name>          
+	   - [x] npm start          
       
-
+      
 
 
 
