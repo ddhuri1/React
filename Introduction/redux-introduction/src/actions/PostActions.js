@@ -4,3 +4,10 @@ export const deletePost = (id) => {
       id: id
     }
   }
+
+  export const addPost = (state) => {
+    return {
+      type: 'ADD_POST',
+      state
+    }
+  }

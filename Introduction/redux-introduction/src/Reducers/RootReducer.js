@@ -18,6 +18,22 @@ const initState = {
         posts: newPosts
       }
      }
+/*
+    else if(action.type === 'ADD_POST')
+    {
+      console.log(action);
+      state.id = Math.random()
+      console.log(state);
+
+      console.log(state);
+      let listNew = [...state.posts, state];
+      console.log(listNew);
+
+      return {
+        posts: listNew
+      }
+     }*/
+
     return state;
   }
   

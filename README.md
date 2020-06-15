@@ -97,7 +97,14 @@ This is an introduction to React that takes you from what React is, to understan
 
    to redirect from a page, call ```this.post.history("/");```
     
-   
+6. **Project-Manager:**
+
+   This is a project where you can add your projects and descriptions. It is linked with firebase: ![React-Redux-Firebase](https://github.com/ddhuri1/React/blob/master/React-Redux-Firebase.png) and supports signin functionality.
+
+   - ***Setting Up:***<br />
+      
+
+
 
 
 
