@@ -109,15 +109,15 @@ This is an introduction to React that takes you from what React is, to understan
 	   - [x] npm start          
       
    - ***Navbar Routing:***<br />
+      - [x] scripts: "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" | https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" | "https://fonts.googleapis.com/icon?family=Material+Icons"
       - [x] Navbar Component
       - [x] Dashboard Component
       - [x] Routes to home page and projects
       - [x] Project summary and detail
 
    - ***Auth part 1:***<br />
-      - [x]
-      - [x]
-      - [x]
+      - [x] Sign In Component
+      - [x] Sign Up Component
 
    - ***:***<br />
       - [x]
@@ -128,7 +128,7 @@ This is an introduction to React that takes you from what React is, to understan
       - [x]
       - [x]
       - [x]
-      
+
    - ***:***<br />
 
    - ***:***<br />
