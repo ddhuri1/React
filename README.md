@@ -57,7 +57,7 @@ This is an introduction to React that takes you from what React is, to understan
  
    React Router is a collection of navigational components that compose declaratively with your application. 
    - ***React Router:***<br />
-   Generate Single Page Apps. To install it cd into the directory of the newly made project and type: ***"npm install react-router-dom"***. With this you can write an application that will run in the browser. <br />
+   Generate Single Page Apps. To install it cd into the directory of the newly made project and type: ```npm install react-router-dom```. With this you can write an application that will run in the browser. <br />
    In the App.js, import {BrowserRouter, Router, Route, Switch} (what you need) from the dom package.
    Then you can add the routes in <Route> and use exact-path instead of path,to match / exactly to home. <br /> eg:<Route exact path = "/" component={Home}/> <br />
    To avoid the page to reload/refresh at every call, use {Link, NavLink} from the dom package. So instead of using <a>, use <Link to = "">, this way behind the scene it calls a preventDefault (reload) on it. <br />
@@ -67,14 +67,14 @@ This is an introduction to React that takes you from what React is, to understan
    We can also have put own HOC.
 
    - ***HTTP RESTful Library "AXIOS":***<br />
-   This will fire a REST API to fetch some data from a end point. Use Axios for this. ***"npm install axios"***. It is a Javascript library used to make http requests from node.js or XMLHttpRequests from the browser and it supports the Promise API that is native to JS ES6. Axios is a tool in the Javascript Utilities & Libraries category of a tech stack. <br />
+   This will fire a REST API to fetch some data from a end point. Use Axios for this. ```npm install axios```. It is a Javascript library used to make http requests from node.js or XMLHttpRequests from the browser and it supports the Promise API that is native to JS ES6. Axios is a tool in the Javascript Utilities & Libraries category of a tech stack. <br />
    Alternatives to Axios are: redux-saga, graphQL, jQuery, Modernizr, fancyBox, Lodash, Moment.js. <br />
    Use the get/fetch method in componentDidMount(). Use the <Switch> to only load up 1 component at a time.
 
 5. **redux-introduction:**
 
    This project has the same code structure as routes-introduction, just that instead on Axios we will use Redux store.
-   Redux is really a fairly simple design pattern. Redux is a predictable state container for JavaScript apps. Install both redux and react redux: ***"npm install redux react-redux"***. <br /> 
+   Redux is really a fairly simple design pattern. Redux is a predictable state container for JavaScript apps. Install both redux and react redux: ```npm install redux react-redux```. <br /> 
    More information: https://redux.js.org/introduction/getting-started. <br />
 
    ![Redux process](https://www.esri.com/arcgis-blog/wp-content/uploads/2017/09/react-redux-overview.png)
@@ -119,11 +119,16 @@ This is an introduction to React that takes you from what React is, to understan
       - [x] Sign In Component
       - [x] Sign Up Component
       - [x] NavLinks 
-      
-   - ***:***<br />
-      - [x]
-      - [x]
-      - [x]
+
+   - ***Redux:***<br />
+      - [x] Set up the store in index.js
+      - [x] Create various reducers required (state, action)
+      - [x] Using combineReducers from redux we combine them into the root reducer that is passed to createStore()
+      - [x] Creating and Accessing data to and from the redux store
+      - [x] npm install redux-thunk:
+            - [x] Halt dispatch
+            - [x] Perform async request
+            - [x] Resume dispatch to reducer
 
    - ***:***<br />
       - [x]
