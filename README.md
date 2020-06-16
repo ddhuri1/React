@@ -134,6 +134,8 @@ This is an introduction to React that takes you from what React is, to understan
       - [x] Create a firebase account at https://firebase.google.com/ and register the app
       - [x] npm install firebase 
       - [x] Firestore data and collections
+      - [x] npm install react-redux-firebase redux firestore
+     If you get a TypeError related to store in index.js use ```npm install --save react-redux-firebase@2.1.8``` and ```npm install --save redux-firestore@0.5.7``` 
 
    - ***:***<br />
 
