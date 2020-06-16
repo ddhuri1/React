@@ -131,9 +131,9 @@ This is an introduction to React that takes you from what React is, to understan
             - [x] Resume dispatch to reducer
 
    - ***Firebase:***<br />
-      - [x] Create a firebase account and register the app
-      - [x]
-      - [x]
+      - [x] Create a firebase account at https://firebase.google.com/ and register the app
+      - [x] npm install firebase 
+      - [x] Firestore data and collections
 
    - ***:***<br />
 
