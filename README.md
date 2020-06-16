@@ -130,8 +130,8 @@ This is an introduction to React that takes you from what React is, to understan
             - [x] Perform async request
             - [x] Resume dispatch to reducer
 
-   - ***:***<br />
-      - [x]
+   - ***Firebase:***<br />
+      - [x] Create a firebase account and register the app
       - [x]
       - [x]
 
