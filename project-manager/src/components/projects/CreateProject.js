@@ -6,7 +6,8 @@ import { Redirect } from 'react-router-dom'
 class CreateProject extends Component {
   state = {
     title: '',
-    content: ''
+    content: '',
+    links: ''
   }
   handleChange = (e) => {
     this.setState({
@@ -15,6 +16,7 @@ class CreateProject extends Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
+    console.log(this.state);
     this.props.createProject(this.state);
     this.props.history.push('/');
   }
@@ -32,6 +34,10 @@ class CreateProject extends Component {
           <div className="input-field">
             <textarea id="content" className="materialize-textarea" onChange={this.handleChange}></textarea>
             <label htmlFor="content">Project Content</label>
+          </div>
+          <div className="input-field">
+            <textarea id="links" className="materialize-textarea" onChange={this.handleChange}></textarea>
+            <label htmlFor="links">Links</label>
           </div>
           <div className="input-field">
             <button className="btn cyan lighten-1">Create</button>
