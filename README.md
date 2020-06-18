@@ -148,8 +148,11 @@ This is an introduction to React that takes you from what React is, to understan
       - [x] npm install -g firebase-tools
       - [x] firebase init
       - [x] firebase deploy --only functions
-   - ***:***<br />
-
+   
+   - ***Hosting:***<br />
+      - [x] Enable firebase hosting
+      - [x] Build React project to the build folder : npm run build
+      - [x] Move build folder content into dist folder
 
 
 
