@@ -145,9 +145,9 @@ This is an introduction to React that takes you from what React is, to understan
       - [x] Firestore rules: https://www.youtube.com/watch?v=O5QxNn6ET5c&list=PL4cUxeGkcC9iWstfXntcj8f-dFZ4UtlN3&index=32
 
    - ***Cloud Functions:***<br />
-      - [x]
-      - [x]
-      - [x]
+      - [x] npm install -g firebase-tools
+      - [x] firebase init
+      - [x] firebase deploy --only functions
    - ***:***<br />
 
 
