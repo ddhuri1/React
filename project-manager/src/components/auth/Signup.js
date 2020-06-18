@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { signUp } from '../../store/actions/AuthActions'
+import { signUp } from '../../store/actions/authActions'
 
-class Signup extends Component {
+class SignUp extends Component {
   state = {
     email: '',
     password: '',
@@ -17,7 +17,6 @@ class Signup extends Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state);
     this.props.signUp(this.state);
   }
   render() {
@@ -26,7 +25,7 @@ class Signup extends Component {
     return (
       <div className="container">
         <form className="white" onSubmit={this.handleSubmit}>
-          <h5 className="cyan-text text-darken-3">Hello New User!! <br />Please Sign Up</h5>
+          <h5 className="grey-text text-darken-3">Sign Up</h5>
           <div className="input-field">
             <label htmlFor="email">Email</label>
             <input type="email" id='email' onChange={this.handleChange} />
@@ -44,7 +43,7 @@ class Signup extends Component {
             <input type="text" id='lastName' onChange={this.handleChange} />
           </div>
           <div className="input-field">
-            <button className="btn cyan lighten-1 z-depth-0">SIGN UP</button>
+            <button className="btn pink lighten-1 z-depth-0">Sign Up</button>
             <div className="center red-text">
               { authError ? <p>{authError}</p> : null }
             </div>
@@ -68,4 +67,4 @@ const mapDispatchToProps = (dispatch)=> {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Signup)
+export default connect(mapStateToProps, mapDispatchToProps)(SignUp)

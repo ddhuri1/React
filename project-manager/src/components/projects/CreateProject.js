@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import {connect} from 'react-redux';
-import {createProject} from '../../store/actions/ProjectActions';
+import { connect } from 'react-redux'
+import { createProject } from '../../store/actions/projectActions'
 import { Redirect } from 'react-router-dom'
 
 class CreateProject extends Component {
   state = {
     title: '',
-    content: '',
-    links: ''
+    content: ''
   }
   handleChange = (e) => {
     this.setState({
@@ -16,7 +15,7 @@ class CreateProject extends Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state);
+    // console.log(this.state);
     this.props.createProject(this.state);
     this.props.history.push('/');
   }
@@ -26,7 +25,7 @@ class CreateProject extends Component {
     return (
       <div className="container">
         <form className="white" onSubmit={this.handleSubmit}>
-          <h5 className="cyan-text text-darken-3">Create a New Project</h5>
+          <h5 className="grey-text text-darken-3">Create a New Project</h5>
           <div className="input-field">
             <input type="text" id='title' onChange={this.handleChange} />
             <label htmlFor="title">Project Title</label>
@@ -36,11 +35,7 @@ class CreateProject extends Component {
             <label htmlFor="content">Project Content</label>
           </div>
           <div className="input-field">
-            <textarea id="links" className="materialize-textarea" onChange={this.handleChange}></textarea>
-            <label htmlFor="links">Links</label>
-          </div>
-          <div className="input-field">
-            <button className="btn cyan lighten-1">Create</button>
+            <button className="btn pink lighten-1">Create</button>
           </div>
         </form>
       </div>
@@ -54,10 +49,10 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapPropsToState = (dispatch) =>{
+const mapDispatchToProps = dispatch => {
   return {
     createProject: (project) => dispatch(createProject(project))
   }
 }
 
-export default connect(mapStateToProps, mapPropsToState)(CreateProject);
+export default connect(mapStateToProps, mapDispatchToProps)(CreateProject)
