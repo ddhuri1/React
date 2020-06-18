@@ -137,16 +137,17 @@ This is an introduction to React that takes you from what React is, to understan
       - [x] npm install react-redux-firebase redux firestore
      If you get a TypeError related to store in index.js use ```npm install --save react-redux-firebase@2.1.8``` and ```npm install --save redux-firestore@0.5.7``` 
       - [x] Send and receive data from firebase
+      - [x] npm install moment
 
    - ***Firebase Auth:***<br />
       - [x] Set Sign in method on firebase
       - [x] Log in and Log Out users
-      - [x] 
-      - [x] 
-      - [x] 
+      - [x] Firestore rules: https://www.youtube.com/watch?v=O5QxNn6ET5c&list=PL4cUxeGkcC9iWstfXntcj8f-dFZ4UtlN3&index=32
 
-   - ***:***<br />
-
+   - ***Cloud Functions:***<br />
+      - [x]
+      - [x]
+      - [x]
    - ***:***<br />
 
 
