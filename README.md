@@ -49,7 +49,8 @@ This is an introduction to React that takes you from what React is, to understan
    - [x] Delete todos
    - [x] Mark them
 
-   The running applicaton can be viewed on devinadhuri.com/ <br />
+   The running applicaton can be viewed on  http://devinadhuri.com/todo/
+ <br />
    For materializecss: Add this link to index.html <br />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
